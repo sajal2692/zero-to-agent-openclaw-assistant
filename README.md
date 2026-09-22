@@ -30,7 +30,7 @@ Start with `SOUL.md` and `USER.md` to see how the assistant is set up, then read
   A small VPS, a mini PC at home, or a spare laptop all work. Your own laptop is fine for trying
   it out.
 - A model for it to use: an existing Claude Code or Codex login, or an API key from a model
-  provider. Model usage costs money. See [Costs](#costs).
+  provider. Model usage costs money.
 - A Telegram account, and a bot token from Telegram's @BotFather.
 
 ## Setup
@@ -76,52 +76,7 @@ Start with `SOUL.md` and `USER.md` to see how the assistant is set up, then read
    openclaw dashboard
    ```
 
-## Example requests
-
-These are the requests from the session, in order. Send them in the dashboard chat.
-
-> What's happening in my life? What all am I doing right now?
-
-> Am I on track with my reading goal this year?
-
-> Who won the latest Booker Prize? Look it up, add it to my reading list, and show me the list.
-
-> Remind me in 1 minute on Telegram to drink water.
-
-After the reminder request, open your agent's Automations tab in the dashboard. The new job shows
-when it runs, what it does, and its Delivery settings. A minute later the reminder arrives in
-Telegram.
-
-> Every Sunday at 7pm, message me on Telegram with how my reading is going this year.
-
-[docs/automations.md](docs/automations.md) explains the three parts of an automation and has the
-same jobs as commands.
-
-## Sample data
-
-The person in `USER.md` and `MEMORY.md` is a sample profile, and everything in `workspace/notes/`
-is sample data written for the course: tasks, daily notes, workouts, and a reading list from
-April 2026. None of it is connected to a real account. Because the notes are dated April 2026,
-the assistant will point out that they are old until you add your own.
-
-## Costs
-
-OpenClaw costs nothing. The model calls cost money. Every message you send and every automation
-run is a model call, including runs that happen while you are away. A reminder is a small run,
-and a job that reads many files every day adds up over a month. Start with a few automations and
-check the Usage page in the dashboard.
-
-## Security
-
-The assistant can read and write files in its workspace and run commands on the machine it lives
-on. Run it on a machine you are comfortable giving it, keep the dashboard private, and approve
-Telegram pairing only for yourself. The OpenClaw
-[security guide](https://docs.openclaw.ai/gateway/security) explains the settings.
-
 ## Credits
 
 - [OpenClaw](https://github.com/openclaw/openclaw) and its
   [documentation](https://docs.openclaw.ai).
-- The workspace is a trimmed copy of the personal assistant from my full course,
-  [Building Integrated AI Agents with OpenClaw](https://github.com/sajal2692/openclaw-oreilly-live-course).
-  That repository also has the VPS deployment guide, a multi-agent setup, and security notes.
