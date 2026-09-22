@@ -3,11 +3,6 @@
 This repository goes with my October 7, 2026 O'Reilly session, **Build a Personal Assistant on
 OpenClaw**, part of *Zero to Agent in 30*.
 
-In the session I show a personal assistant running on OpenClaw. It is one agent on a small server,
-and I reach it from the browser dashboard and from Telegram. It reads and updates my notes and my
-reading list, looks things up on the web, and sends me reminders on its own schedule. This
-repository holds that assistant's workspace, so you can run the same assistant yourself.
-
 ## What's in the repository
 
 | Path | What it holds |
